@@ -22,9 +22,14 @@ import { trigger, style, transition, animate, keyframes } from '@angular/animati
 })
 export class HeaderSlideComponent implements OnInit {
   loaded = false;
-
   ngOnInit() {
     this.loaded = true; // Trigger animations when component is initialized
+  }
+  flipped: boolean = false;
+
+  flipImage() {
+    this.flipped = !this.flipped;
+    setTimeout(() => this.flipped = false, 1000)
   }
 
 }

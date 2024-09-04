@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { HeaderSlideComponent } from './components/main-page/header-slide/header-slide.component';
+import { HighlightTextDirective } from './directives/highlight-text.directive';
+import { FollowerComponent } from './components/reusable/follower/follower.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    HeaderSlideComponent
+    HeaderSlideComponent,
+    HighlightTextDirective,
+    FollowerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,21 @@
 .wrapper{
+  position:relative;
   width: 80%;
   display: block;
   margin:auto;
   min-height: 300px;
+  transition: background-color 50s ease-in-out;
   background-color: #98a8a8;
   border-radius: 50px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap:25px;
   padding:20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wrapper:hover{
+  background-color: #2d3647;
 }
 .photo{
   padding:25px;
@@ -17,6 +23,16 @@
 .photo-img{
   width:250px;
   border-radius: 250px;
+  mix-blend-mode: normal;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d; /* Maintain 3D space for the flip effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+.flipped {
+  transform: rotateY(180deg); /* Flip the image on the Y-axis */
+}
+.scaled:hover{
+  transform: scale(1.1);
 }
 .text-container{
   position: relative;
@@ -37,5 +53,52 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 5px lightblue;
+  transition: box-shadow 1s ease-in-out;
 }
+.text:hover {
+  box-shadow: -10px -10px 5px lightblue; /* Shadow moves to the opposite side */
+}
+
+@media screen and (max-width: 862px){
+  .wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px;
+    gap:15px;
+  }
+  .photo{
+    padding:0px;
+  }
+}
+@media screen and (max-width: 786px){
+  // .text-container{
+  //   margin:15px;
+  // }
+  h2, p{
+    margin:5px;
+  }
+}
+@media screen and (max-width: 650px){
+  .photo-img{
+    width:150px;
+  }
+}
+@media screen and (max-width: 500px){
+  .wrapper{
+    flex-direction: column;
+  }
+  .text{
+    position: static;
+    transform: none;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+
 
