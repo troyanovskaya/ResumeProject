@@ -7,6 +7,8 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { HeaderSlideComponent } from './components/main-page/header-slide/header-slide.component';
 import { HighlightTextDirective } from './directives/highlight-text.directive';
 import { FollowerComponent } from './components/reusable/follower/follower.component';
+import { InstrumentsComponent } from './components/main-page/instruments/instruments.component';
+import { IconComponent } from './components/reusable/icon/icon.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FollowerComponent } from './components/reusable/follower/follower.compo
     MainPageComponent,
     HeaderSlideComponent,
     HighlightTextDirective,
-    FollowerComponent
+    FollowerComponent,
+    InstrumentsComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

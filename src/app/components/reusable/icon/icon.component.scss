@@ -1,0 +1,24 @@
+.wrapper{
+  display:block;
+  justify-self: center;
+}
+.icon{
+  display:block;
+  margin:auto;
+  opacity: 0.8;
+  height:100px;
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+.icon-text{
+  visibility: hidden;
+  text-align:center;
+  transition: visibility .2s ease;
+  margin-top: 10px;
+}
+.icon:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+.wrapper:hover .icon-text{
+  visibility:visible;
+}

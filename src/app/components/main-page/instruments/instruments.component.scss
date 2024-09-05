@@ -1,0 +1,11 @@
+.wrapper{
+  padding: 0px 20px;
+}
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
