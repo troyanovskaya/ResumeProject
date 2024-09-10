@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule, CdkDrag } from '@angular/cdk/drag-drop';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
@@ -9,6 +13,9 @@ import { HighlightTextDirective } from './directives/highlight-text.directive';
 import { FollowerComponent } from './components/reusable/follower/follower.component';
 import { InstrumentsComponent } from './components/main-page/instruments/instruments.component';
 import { IconComponent } from './components/reusable/icon/icon.component';
+import { DragDropComponent } from './components/main-page/drag-drop/drag-drop.component';
+import { ProjectsComponent } from './components/main-page/projects/projects.component';
+import { ProjectComponent } from './components/main-page/projects/project/project.component';
 
 
 @NgModule({
@@ -19,12 +26,19 @@ import { IconComponent } from './components/reusable/icon/icon.component';
     HighlightTextDirective,
     FollowerComponent,
     InstrumentsComponent,
-    IconComponent
+    IconComponent,
+    DragDropComponent,
+    ProjectsComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule,
+    CdkDrag,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

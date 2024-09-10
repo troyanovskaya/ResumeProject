@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Icon } from 'src/app/components/reusable/icon/schemas/icon';
+import { Icon } from 'src/app/schemas/icon';
 
 @Component({
   selector: 'app-instruments',
@@ -13,6 +13,10 @@ export class InstrumentsComponent {
     {name: 'Postman', path: 'assets/instruments/postman.png', link: 'https://www.postman.com/', alias: 'postman'},
     {name: 'Firebase', path: 'assets/instruments/firebase.png', link: 'https://firebase.google.com/', alias: 'firebase'},
     {name: 'Render', path: 'assets/instruments/render.png', link: 'https://docs.render.com/', alias: 'render'},
+    {name: 'Angular', path: 'assets/instruments/angular.png', link: 'https://angular.dev/', alias: 'angular'},
+    {name: 'Material', path: 'assets/instruments/material.png', link: 'https://material.angular.io/', alias: 'material'},
+    {name: 'Nodejs', path: 'assets/instruments/nodejs.png', link: 'https://nodejs.org/', alias: 'nodejs'},
+    {name: 'Express.js', path: 'assets/instruments/expressjs.png', link: 'https://expressjs.com/', alias: 'expressjs'}
   ]
 
 }
