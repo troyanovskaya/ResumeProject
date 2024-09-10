@@ -1,2 +1,8 @@
+<section class="wrapper">
+  <h2>My projects:</h2>
+  <ng-container *ngFor="let project of projects">
+    <app-project [project]="project"></app-project>
+  </ng-container>
+</section>
 
-<app-project></app-project>
+

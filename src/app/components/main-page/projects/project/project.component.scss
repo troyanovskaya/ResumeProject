@@ -1,5 +1,15 @@
-.example-card {
+.card {
   max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+mat-card{
+  min-height:600px;
+}
+mat-card-header{
+  min-height: 70px;
+}
+[mat-card-image]{
+  height: 250px;
 }
 
 img.mat-mdc-card-avatar{
@@ -7,7 +17,11 @@ img.mat-mdc-card-avatar{
   height: 60px;
 }
 mat-card{
-  border: 2px solid #0b193c;
+  border: 1px solid lightgrey;
+}
+p {
+  word-break: break-word;
+  hyphens: auto;
 }
 
 
