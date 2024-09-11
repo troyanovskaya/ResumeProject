@@ -17,6 +17,7 @@ import { IconComponent } from './components/reusable/icon/icon.component';
 import { DragDropComponent } from './components/main-page/drag-drop/drag-drop.component';
 import { ProjectsComponent } from './components/main-page/projects/projects.component';
 import { ProjectComponent } from './components/main-page/projects/project/project.component';
+import { FindMeComponent } from './components/main-page/find-me/find-me.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ProjectComponent } from './components/main-page/projects/project/projec
     IconComponent,
     DragDropComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    FindMeComponent
   ],
   imports: [
     BrowserModule,
