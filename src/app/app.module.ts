@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AlertModule } from '@coreui/angular';
+// import { AlertModule } from '@coreui/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,8 +48,7 @@ import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.compo
     CdkDrag,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule,
-    AlertModule
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
