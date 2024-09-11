@@ -18,6 +18,8 @@ import { DragDropComponent } from './components/main-page/drag-drop/drag-drop.co
 import { ProjectsComponent } from './components/main-page/projects/projects.component';
 import { ProjectComponent } from './components/main-page/projects/project/project.component';
 import { FindMeComponent } from './components/main-page/find-me/find-me.component';
+import { HobbiesComponent } from './components/main-page/hobbies/hobbies.component';
+import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { FindMeComponent } from './components/main-page/find-me/find-me.componen
     DragDropComponent,
     ProjectsComponent,
     ProjectComponent,
-    FindMeComponent
+    FindMeComponent,
+    HobbiesComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule,
