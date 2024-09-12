@@ -1,5 +1,6 @@
 .card {
   max-width: 400px;
+  box-sizing:border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 mat-card{
@@ -7,6 +8,8 @@ mat-card{
 }
 mat-card-header{
   min-height: 70px;
+  word-break: break-word;
+  hyphens: auto;
 }
 [mat-card-image]{
   height: 250px;
@@ -30,3 +33,27 @@ p {
   border-radius: 50%;
   float:left;
 }
+@media screen and (max-width: 405px){
+  .card{
+    width:100%;
+  }
+  .mat-mdc-card-content{
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 325px){
+  [mat-card-image]{
+    height: 175px;
+  }
+  img.mat-mdc-card-avatar{
+    display:none;
+  }
+  mat-card{
+    min-height:525px;
+  }
+  .mdc-button{
+    font-size: 0.8em;
+  }
+}
+
+

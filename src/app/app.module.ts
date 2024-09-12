@@ -5,8 +5,6 @@ import { DragDropModule, CdkDrag } from '@angular/cdk/drag-drop';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { AlertModule } from '@coreui/angular';
-// import { AlertModule } from '@coreui/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +20,7 @@ import { ProjectComponent } from './components/main-page/projects/project/projec
 import { FindMeComponent } from './components/main-page/find-me/find-me.component';
 import { HobbiesComponent } from './components/main-page/hobbies/hobbies.component';
 import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.component';
+import { SliderComponent } from './components/reusable/slider/slider.component';
 
 
 @NgModule({
@@ -38,7 +37,8 @@ import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.compo
     ProjectComponent,
     FindMeComponent,
     HobbiesComponent,
-    HobbyComponent
+    HobbyComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,8 @@ import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.compo
     CdkDrag,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

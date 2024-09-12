@@ -1,4 +1,7 @@
 <section class="wrapper">
-  <app-hobby></app-hobby>
+  <ng-container *ngFor="let hobby of hobbies">
+    <app-hobby [hobby]="hobby"></app-hobby>
+  </ng-container>
+
 
 </section>
