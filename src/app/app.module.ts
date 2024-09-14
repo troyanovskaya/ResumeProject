@@ -14,7 +14,6 @@ import { HighlightTextDirective } from './directives/highlight-text.directive';
 import { FollowerComponent } from './components/reusable/follower/follower.component';
 import { InstrumentsComponent } from './components/main-page/instruments/instruments.component';
 import { IconComponent } from './components/reusable/icon/icon.component';
-import { DragDropComponent } from './components/main-page/drag-drop/drag-drop.component';
 import { ProjectsComponent } from './components/main-page/projects/projects.component';
 import { ProjectComponent } from './components/main-page/projects/project/project.component';
 import { FindMeComponent } from './components/main-page/find-me/find-me.component';
@@ -32,7 +31,6 @@ import { SliderComponent } from './components/reusable/slider/slider.component';
     FollowerComponent,
     InstrumentsComponent,
     IconComponent,
-    DragDropComponent,
     ProjectsComponent,
     ProjectComponent,
     FindMeComponent,

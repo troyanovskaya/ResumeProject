@@ -13,7 +13,7 @@ export class HobbiesComponent {
         'All but three of them were grown from leaves and right now they are on the stage of starter (can call it teenage plant) and promise to bloom soon enough.',
         'Besides violets I have two Venus flytraps and one pot of lithops. All together they are threatening not only to take over my own room, but the leaving room also.'
       ]},
-    {imgs: ['assets/hobbies/violet1.jpg', 'assets/hobbies/violet2.jpg', 'assets/hobbies/violet3.jpg'], title: 'Reading',
+    {imgs: ['assets/hobbies/book1.jpg', 'assets/hobbies/book2.jpg', 'assets/hobbies/book3.jpg'], title: 'Reading',
       description: ['I strongly believe that bying books, owning books and reading them are three differend types of pleasure. Pleasure, I could never deny myself.',
         'Since childhood I was obsessed with reading fantasy, but getting older I understood that different genres can be captivating. Nonetheless, fantasy books are predominant inhabitants of my book shelves. '
     ]}

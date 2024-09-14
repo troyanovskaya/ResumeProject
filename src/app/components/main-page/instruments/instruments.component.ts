@@ -1,10 +1,23 @@
 import { Component } from '@angular/core';
 import { Icon } from 'src/app/schemas/icon';
+import { trigger, style, animate, transition, query, stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-instruments',
   templateUrl: './instruments.component.html',
-  styleUrls: ['./instruments.component.scss']
+  styleUrls: ['./instruments.component.scss'],
+  animations: [
+    trigger('iconAnimation', [
+      transition(':enter', [
+        query('.icon', [
+          style({ opacity: 0, transform: 'scale(0.5)' }),
+          stagger(100, [
+            animate('500ms ease-out', style({ opacity: 1, transform: 'scale(1)' }))
+          ])
+        ])
+      ])
+    ])
+  ]
 })
 export class InstrumentsComponent {
   icons: Icon[] = [{name: 'VS Code', path: 'assets/instruments/vs_code.png', link:'https://code.visualstudio.com/', alias: 'vs_code'},
