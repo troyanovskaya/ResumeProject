@@ -1,4 +1,9 @@
-<div >
-<app-slider [slides]="hobby?.imgs || []"></app-slider>
+<div class="wrapper">
+  <app-slider [slides]="hobby?.imgs || []" ></app-slider>
+  <div class="text-container">
+    <h3>{{hobby?.title}}</h3>
+    <p *ngFor="let d of hobby?.description">{{d}}</p>
+  </div>
+
 </div>
 

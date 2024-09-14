@@ -8,7 +8,7 @@
     [ngStyle]="{ 'background-image': getCurrentSlideUrl()}">
 
   </div>
-  <!-- <div class="title">{{'New releases' | uppercase}}</div> -->
+  <!-- <div class="title">{{title | uppercase}}</div> -->
   <div class="dotsContainer">
     <div
       *ngFor="let slide of slides; let slideIndex = index"
