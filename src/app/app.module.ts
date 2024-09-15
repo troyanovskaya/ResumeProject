@@ -22,6 +22,7 @@ import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.compo
 import { SliderComponent } from './components/reusable/slider/slider.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,8 +47,7 @@ import { SliderComponent } from './components/reusable/slider/slider.component';
     CdkDrag,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule,
-
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
