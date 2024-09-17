@@ -1,5 +1,6 @@
 .card {
   max-width: 400px;
+  height:100%;
   box-sizing:border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -13,14 +14,27 @@ mat-card-header{
 }
 [mat-card-image]{
   height: 250px;
+  margin-bottom: 20px;
 }
-
+p {
+  text-indent: 0em;
+  font-weight: 0.9em;
+  color:grey;
+}
 img.mat-mdc-card-avatar{
   width: 65px;
   height: 60px;
 }
 mat-card{
   border: 1px solid lightgrey;
+}
+
+mat-card-header{
+  transition: transform .3s ease-in-out;
+}
+mat-card-header:hover{
+  transform: scale(1.05);
+  cursor:pointer;
 }
 p {
   word-break: break-word;

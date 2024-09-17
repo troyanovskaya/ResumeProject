@@ -1,8 +1,9 @@
 <mat-card class="card" appearance="outlined" >
   <mat-card-header>
-    <img *ngIf="project?.avatar" mat-card-avatar [src]="project?.avatar" alt="book-logo">
-    <mat-card-title>{{project?.title}}</mat-card-title>
-    <mat-card-subtitle>{{project?.subtitle}}</mat-card-subtitle>
+    <img *ngIf="project?.avatar" mat-card-avatar [src]="project?.avatar"
+      alt="book-logo">
+    <mat-card-title (click)="openTab(project?.links?.frontEnd)">{{project?.title}}</mat-card-title>
+    <mat-card-subtitle (click)="openTab(project?.links?.frontEnd)">{{project?.subtitle}}</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image [src]="project?.picture" [alt]="project?.title">
   <mat-card-content>
@@ -38,16 +39,17 @@
         </mat-expansion-panel-header>
         <p> {{project?.new}} </p>
       </mat-expansion-panel>
+      <mat-expansion-panel *ngIf="project?.links?.gitF || project?.links?.gitB" (opened)="panelOpenState5.set(true)" (closed)="panelOpenState4.set(false)">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Deployment </mat-panel-title>
+          <mat-panel-description>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <button mat-button *ngIf="project?.links?.gitF"
+        (click)="openTab(project?.links?.gitF)">Frontend GitHub</button>
+      <button mat-button *ngIf="project?.links?.gitB"
+        (click)="openTab(project?.links?.gitB)">Backend GitHub</button>
+      </mat-expansion-panel>
     </mat-accordion>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-button *ngIf="project?.links?.frontEnd"
-      (click)="openTab(project?.links?.frontEnd)">Frontend deployment</button>
-    <button mat-button *ngIf="project?.links?.backEnd"
-      (click)="openTab(project?.links?.backEnd)">Backend deployment</button>
-    <button mat-button *ngIf="project?.links?.gitF"
-      (click)="openTab(project?.links?.gitF)">Frontend GitHub</button>
-    <button mat-button *ngIf="project?.links?.gitB"
-      (click)="openTab(project?.links?.gitB)">Backend GitHub</button>
-  </mat-card-actions>
 </mat-card>

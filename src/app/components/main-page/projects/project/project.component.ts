@@ -14,6 +14,7 @@ export class ProjectComponent {
   readonly panelOpenState2 = signal(false);
   readonly panelOpenState3 = signal(false);
   readonly panelOpenState4 = signal(false);
+  readonly panelOpenState5 = signal(false);
   openTab(link:string | undefined){
     if(link){
       window.open(link, '_blank');

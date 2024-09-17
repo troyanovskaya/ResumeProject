@@ -16,7 +16,7 @@ import { InstrumentsComponent } from './components/main-page/instruments/instrum
 import { IconComponent } from './components/reusable/icon/icon.component';
 import { ProjectsComponent } from './components/main-page/projects/projects.component';
 import { ProjectComponent } from './components/main-page/projects/project/project.component';
-import { FindMeComponent } from './components/main-page/find-me/find-me.component';
+import { FindMeComponent } from './components/main-page/header-slide/find-me/find-me.component';
 import { HobbiesComponent } from './components/main-page/hobbies/hobbies.component';
 import { HobbyComponent } from './components/main-page/hobbies/hobby/hobby.component';
 import { SliderComponent } from './components/reusable/slider/slider.component';

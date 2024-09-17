@@ -50,6 +50,21 @@ export class DataService {
         'Since childhood I was obsessed with reading fantasy, but getting older I understood that different genres can be captivating. Nonetheless, fantasy books are predominant inhabitants of my book shelves. '
     ]}
   ]
+  findMe: Icon[] = [
+    {name: 'Linkedin',
+      path: 'assets/linkedin.png',
+      link: 'https://www.linkedin.com/in/anastasiia-troianovska-bb4919234/',
+      alias: 'linkedin'},
+    {name: 'GitHub',
+      path: 'assets/instruments/github.png',
+      link: 'https://github.com/troyanovskaya',
+      alias: 'github'}
+
+  ]
+  gmail:Icon = {name: 'Gmail',
+    path: 'assets/instruments/gmail.png',
+    link: 'place.with.secret@gmail.com',
+    alias: 'gmail'}
   getProjects(){
     return this.projects;
   }
@@ -58,6 +73,12 @@ export class DataService {
   }
   getHobbies(){
     return this.hobbies;
+  }
+  getFindMe(){
+    return this.findMe;
+  }
+  getGmail(){
+    return this.gmail;
   }
 }
 

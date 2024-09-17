@@ -6,13 +6,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  align-items:center;
+  align-items: stretch;
   justify-content: center;
   h2{
     width: 100%;
   }
 }
 app-project{
+  height:auto;
   box-sizing: border-box;
   max-width:100%;
 }

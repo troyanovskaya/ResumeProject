@@ -1,0 +1,11 @@
+<section class="wrapper">
+ <a [href]="icon.link" target="_blank" rel="noopener noreferrer"
+  *ngFor="let icon of icons">
+  <img class="icon" [src]="icon.path" [alt]="icon.alias">
+ </a>
+ <img class="icon" [src]="gmail.path" [alt]="gmail.alias" (click)="copyToClipboard(gmail)">
+<!-- <div *ngIf="statusMessage" class="status">
+  {{ statusMessage }}
+</div> -->
+<span *ngIf="statusMessage" class="status"> {{ statusMessage }}</span>
+</section>
