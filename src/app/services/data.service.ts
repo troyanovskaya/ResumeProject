@@ -8,6 +8,12 @@ import { Hobby } from '../schemas/hobby';
 })
 export class DataService {
   projects: Project[] = [
+    { title: 'Task Board', subtitle: 'Board for team task assignment', avatar: '',
+      techologies: ['Angular Material', 'Nest.js', 'Firebebase Database', 'Firebebase Authentication'],
+      description: 'This resource allows to work in team, check your team progress and assign your team mates new tasks (if you are a board creator). As a user, you can create teams, tasks, change them and delete.',
+      new: 'First experience with Firebase Realtime Database and Authentication, Nest.js',
+      links: {frontEnd: 'https://taskboard-eb7da.web.app/login', backEnd: '', gitF: 'https://github.com/troyanovskaya/taskBoard', gitB: 'https://github.com/troyanovskaya/task-board-back'},
+      picture: 'assets/projects/picture4.jpg', languages: ["English"]},
     { title: 'Book Nook', subtitle: 'Book recommendation system', avatar: 'assets/projects/logo1.png',
       techologies: ['Angular', 'Nodejs', 'Express.js', 'Postman', '...'],
       description: 'User gets book recommendations depending on their previous read and popularity of the book. Authorized user gets access to all features of the app (rating books, saving them and getting personalized book recommendations) while non-authorized user can mainly view book-related data and get list of the most popular books. All personal details are safely encrypted and JWT token is used.',
@@ -37,7 +43,8 @@ export class DataService {
     {name: 'Angular', path: 'assets/instruments/angular.png', link: 'https://angular.dev/', alias: 'angular'},
     {name: 'Material', path: 'assets/instruments/material.png', link: 'https://material.angular.io/', alias: 'material'},
     {name: 'Nodejs', path: 'assets/instruments/nodejs.png', link: 'https://nodejs.org/', alias: 'nodejs'},
-    {name: 'Express.js', path: 'assets/instruments/expressjs.png', link: 'https://expressjs.com/', alias: 'expressjs'}
+    {name: 'Express.js', path: 'assets/instruments/expressjs.png', link: 'https://expressjs.com/', alias: 'expressjs'},
+    {name: 'Nest.js', path: 'assets/instruments/nestjs.png', link: 'https://expressjs.com/', alias: 'https://nestjs.com/'},
   ]
   hobbies: Hobby[] = [
     {imgs: ['assets/hobbies/violet1.jpg', 'assets/hobbies/violet2.jpg', 'assets/hobbies/violet3.jpg'], title: 'Plant growing',
